@@ -8,7 +8,7 @@ const AboutMe = () => {
         <SectionHeading>Things About Me</SectionHeading>
       </FadeIn>
       
-      <div className="space-y-4 text-base dark:text-zinc-400">
+      <div className="space-y-4 text-base text-muted-foreground">
         <FadeIn>
           <h2 className="text-base">I believe that great software is born from clarity.</h2>
         </FadeIn>
