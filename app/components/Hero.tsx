@@ -4,8 +4,8 @@ import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 const Hero = () => (
   <section className="pt-24 px-6 max-w-2xl mx-auto text-center">
     <FadeIn>
-      <h1 className="font-serif text-5xl md:text-7xl text-foreground mb-4 tracking-wide">
-        Agniva Sengupta <span className="text-gray-500 font-normal text-2xl"> (アグニヴァ)</span>
+      <h1 className="font-serif text-5xl md:text-6xl text-foreground mb-4 tracking-wide">
+        Agniva Sengupta <span className="text-gray-500 font-normal text-4xl">(アグニヴァ)</span>
       </h1>
     </FadeIn>
     <FadeIn delay={0.1}>
@@ -14,7 +14,7 @@ const Hero = () => (
       </p>
     </FadeIn>
     <FadeIn delay={0.2}>
-      <p className="text-lg md:text-lg leading-relaxed text-zinc-400 mb-6 text-left">
+      <p className="text-lg md:text-base leading-relaxed text-zinc-400 mb-6 text-left">
         a{" "}
         <span className="underline-accent font-medium text-zinc-50">
           full-stack engineer
@@ -26,7 +26,7 @@ const Hero = () => (
       </p>
     </FadeIn>
     <FadeIn delay={0.3}>
-      <p className="text-lg md:text-lg leading-relaxed text-zinc-400 mb-6 text-left">
+      <p className="text-lg md:text-base leading-relaxed text-zinc-400 mb-6 text-left">
         a{" "}
         <span className="underline-accent font-medium text-zinc-50">
           builder
@@ -49,16 +49,16 @@ const Hero = () => (
         {[
           {
             icon: Github,
-            href: "https://github.com/agniva-sengupta",
+            href: "https://github.com/AgnivaSengupta",
             label: "GitHub",
           },
           {
             icon: Linkedin,
-            href: "https://linkedin.com/in/agniva-sengupta",
+            href: "https://www.linkedin.com/in/agniva-sengupta11",
             label: "LinkedIn",
           },
-          { icon: Twitter, href: "https://x.com/agniva_dev", label: "X" },
-          { icon: Mail, href: "mailto:agniva@example.com", label: "Email" },
+          { icon: Twitter, href: "https://x.com/zenyashi_", label: "X" },
+          { icon: Mail, href: "mailto:agnivasengupta11@gmail.com", label: "Email" },
         ].map(({ icon: Icon, href, label }) => (
           <a
             key={label}

@@ -1,3 +1,7 @@
+import AboutMe from "./components/AboutMe";
+import CurrentExplorations from "./components/CurrentExplorations";
+import Footer from "./components/Footer";
+import GetInTouch from "./components/GetInTouch";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
@@ -10,7 +14,11 @@ export default function Home() {
       <ThemeToggle/>
       <Hero />
       <Skills/>
-      <Projects/>
+      <Projects />
+      <CurrentExplorations />
+      <AboutMe />
+      <GetInTouch/>
+      <Footer/>
     </div>
   );
 }

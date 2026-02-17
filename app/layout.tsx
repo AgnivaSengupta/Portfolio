@@ -12,6 +12,11 @@ const instrumentSerif = Instrument_Serif({
   variable: "--font-serif",
 });
 
+// const dm_sans = DM_Sans({
+//   variable: "--font-dm_sans",
+//   subsets: ["latin"],
+// })
+
 const ibm_sans = IBM_Plex_Sans({
   variable: "--font-ibm_sans",
   subsets: ["latin"],

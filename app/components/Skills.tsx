@@ -30,7 +30,7 @@ const skills = [
 ];
 
 const Skills = () => (
-  <section className="py-16 px-6 max-w-2xl mx-auto">
+  <section className="py-10 px-6 max-w-2xl mx-auto">
     <FadeIn>
       <SectionHeading>Skills #</SectionHeading>
     </FadeIn>
