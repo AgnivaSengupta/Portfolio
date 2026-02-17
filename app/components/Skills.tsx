@@ -32,7 +32,7 @@ const skills = [
 const Skills = () => (
   <section className="py-10 px-6 max-w-2xl mx-auto">
     <FadeIn>
-      <SectionHeading>Skills #</SectionHeading>
+      <SectionHeading>Skills</SectionHeading>
     </FadeIn>
     <FadeIn delay={0.1}>
       <div className="flex flex-wrap gap-2.5">
