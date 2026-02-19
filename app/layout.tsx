@@ -61,12 +61,21 @@ export const metadata: Metadata = {
     description:
       "Full Stack Engineer & Open Source Aspirant. Building with Next.js, Go, and exploring Federated Learning.",
     siteName: "Agniva Sengupta",
+    images: [
+      {
+        url: "/preview.png", // You'll need to add an image file to your public folder
+        width: 1200,
+        height: 630,
+        alt: "Agniva Sengupta Portfolio",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Agniva Sengupta | Full Stack Engineer",
     description:
       "Building scalable web apps and exploring distributed systems.",
+    images: ["/preview.png"],
     creator: "@zenyashi",
   },
   icons: {
