@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Inter, IBM_Plex_Sans } from "next/font/google";
 import { Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./components/theme-provider";
+import { Analytics } from "@vercel/analytics/next";
 
 const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
@@ -90,6 +91,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
