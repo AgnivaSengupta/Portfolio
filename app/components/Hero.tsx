@@ -1,5 +1,5 @@
 import FadeIn from "./FadeIn";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, File } from "lucide-react";
 
 const Hero = () => (
   <section className="pt-24 px-6 max-w-2xl mx-auto text-center">
@@ -59,6 +59,7 @@ const Hero = () => (
           },
           { icon: Twitter, href: "https://x.com/zenyashi_", label: "X" },
           { icon: Mail, href: "mailto:agnivasengupta11@gmail.com", label: "Email" },
+          {icon : File, href: "https://drive.google.com/file/d/17Lb5vzHEaX-ULXBv76fOSF7W5lyHTjFf/view?usp=sharing", label: "Resume"},
         ].map(({ icon: Icon, href, label }) => (
           <a
             key={label}
