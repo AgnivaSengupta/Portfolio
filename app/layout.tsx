@@ -89,7 +89,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} ${inter.variable} ${ibm_sans.variable} antialiased`}
       >
@@ -99,6 +99,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <div className="pointer-events-none fixed inset-0 z-50 h-full w-full opacity-[0.04] dark:opacity-[0.05] bg-noise"></div>
           {children}
           <Analytics />
         </ThemeProvider>
