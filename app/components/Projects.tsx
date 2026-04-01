@@ -66,6 +66,38 @@ const projects = [
   },
   {
     id: "02",
+    title: "Shrtn – Distributed URL Shortener",
+    description: (
+      <>
+        Microservices-based URL shortener with{" "}
+        <span className="border-b-2 border-primary/30 pb-0.5 text-foreground font-medium">
+          Snowflake-based unique ID generation
+        </span>{" "}
+        and{" "}
+        <span className="border-b-2 border-primary/30 pb-0.5 text-foreground font-medium">
+          Kafka-driven asynchronous event processing
+        </span>
+        .
+      </>
+    ),
+    features: [
+      "Custom Base62-encoded Snowflake IDs ensuring collision-resistant short links.",
+      "Low-latency redirection using aggressive Redis caching.",
+      "Asynchronous Kafka pipeline for click event processing and GeoIP enrichment.",
+      "Decoupled services for scalability and fault isolation.",
+      "Dockerized microservices architecture for reproducible deployment.",
+    ],
+    tech: ["Golang", "Kafka", "Redis", "PostgreSQL", "Docker"],
+    links: [
+      {
+        icon: Github,
+        label: "Code",
+        href: "https://github.com/AgnivaSengupta/shrtn",
+      },
+    ],
+  },
+  {
+    id: "03",
     title: "PaperTrails",
     description: (
       <>
@@ -97,7 +129,7 @@ const projects = [
     ],
   },
   {
-    id: "03",
+    id: "04",
     title: "ClockedIn",
     description: (
       <>

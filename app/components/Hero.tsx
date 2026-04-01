@@ -1,12 +1,25 @@
+import Image from "next/image";
 import FadeIn from "./FadeIn";
 import { Github, Linkedin, Twitter, Mail, File } from "lucide-react";
 
 const Hero = () => (
   <section className="pt-24 px-6 max-w-2xl mx-auto text-center">
     <FadeIn>
-      <h1 className="font-serif text-5xl md:text-6xl text-foreground mb-4 tracking-wide">
-        Agniva Sengupta 
-      </h1>
+      <div className="flex gap-10 items-center">
+          <Image
+            src="/dp-github.png"
+            alt="Profile Pic"
+            width={120}           // Required for remote/public images
+            height={120}
+            className="rounded-xl"
+        />
+        <div className="flex flex-col text-left">
+          <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4 tracking-wide translate-y-3">Hi, I'm 👋</h1>
+          <h1 className="font-serif text-5xl md:text-6xl text-foreground mb-4 tracking-wide">
+            Agniva Sengupta 
+          </h1>
+        </div>
+      </div>
     </FadeIn>
     <FadeIn delay={0.1}>
       <p className="font-mono text-xs text-muted-foreground mb-10 tracking-wide">
@@ -59,7 +72,7 @@ const Hero = () => (
           },
           { icon: Twitter, href: "https://x.com/zenyashi_", label: "X" },
           { icon: Mail, href: "mailto:agnivasengupta11@gmail.com", label: "Email" },
-          {icon : File, href: "https://drive.google.com/file/d/17Lb5vzHEaX-ULXBv76fOSF7W5lyHTjFf/view?usp=sharing", label: "Resume"},
+          {icon : File, href: "https://drive.google.com/file/d/1YYnXhLQ91-JLsbVbBSQchEXcZPrHj4S9/view?usp=sharing", label: "Resume"},
         ].map(({ icon: Icon, href, label }) => (
           <a
             key={label}
