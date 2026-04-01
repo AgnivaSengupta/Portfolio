@@ -4,23 +4,25 @@ import { Github, Linkedin, Twitter, Mail, File } from "lucide-react";
 
 const Hero = () => (
   <section className="pt-24 px-6 max-w-2xl mx-auto text-center">
-    <FadeIn>
-      <div className="flex gap-10 items-center">
-          <Image
-            src="/dp-github.png"
-            alt="Profile Pic"
-            width={120}           // Required for remote/public images
-            height={120}
-            className="rounded-xl"
-        />
-        <div className="flex flex-col text-left">
+    
+    <FadeIn className="flex gap-10 items-center">
+      <FadeIn delay={0.05}>      
+            <Image
+              src="/dp-github.png"
+              alt="Profile Pic"
+              width={120}           // Required for remote/public images
+              height={120}
+              className="rounded-xl"
+          />
+      </FadeIn>
+        <FadeIn delay={0.1} className="flex flex-col text-left">
           <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4 tracking-wide translate-y-3">Hi, I'm 👋</h1>
           <h1 className="font-serif text-5xl md:text-6xl text-foreground mb-4 tracking-wide">
             Agniva Sengupta 
           </h1>
-        </div>
-      </div>
-    </FadeIn>
+        </FadeIn>
+      </FadeIn>
+
     <FadeIn delay={0.1}>
       <p className="font-mono text-xs text-muted-foreground mb-10 tracking-wide">
         /ɔɡ.niː.βɔ/ · noun · IIEST Shibpur '27 
