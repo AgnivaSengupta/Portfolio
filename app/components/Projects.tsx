@@ -120,7 +120,7 @@ const projects = [
     ],
     tech: ["MongoDB", "Express", "React", "Node.js"],
     links: [
-      { icon: ExternalLink, label: "Link", href: "#" },
+      { icon: ExternalLink, label: "Link", href: "https://papertrails.agniva.dev/" },
       {
         icon: Github,
         label: "Code",
