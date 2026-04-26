@@ -101,13 +101,13 @@ const projects = [
     title: "PaperTrails",
     description: (
       <>
-        Production-grade blogging platform featuring{" "}
+        A minimalist, full-stack blogging platform featuring{" "}
         <span className="border-b-2 border-primary/30 pb-0.5 text-foreground font-medium">
-          decoupled traffic analytics
-        </span>{" "}
-        and{" "}
+          rich-text editing
+        </span>
+        , threaded comments, and{" "}
         <span className="border-b-2 border-primary/30 pb-0.5 text-foreground font-medium">
-          rich-text content creation
+          optimized cloud media storage
         </span>
         .
       </>
@@ -274,15 +274,16 @@ const Projects = () => {
                               </a>
                             </p>
                           </div>
-                          
+
                           {project.links.find((t) => t.label === "Link") && (
                             <div className="flex items-center gap-2">
                               <ExternalLink className="h-4 w-4 text-muted-foreground" />
                               <p className="text-sm font-ibm_sans text-muted-foreground underline cursor-pointer">
                                 <a
                                   href={
-                                    project.links.find((t) => t.label === "Link")
-                                      ?.href
+                                    project.links.find(
+                                      (t) => t.label === "Link",
+                                    )?.href
                                   }
                                   target="_blank"
                                   rel="noopener noreferrer"
