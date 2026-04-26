@@ -3,7 +3,7 @@
 import { useState } from "react";
 import FadeIn from "./FadeIn";
 import SectionHeading from "./SectionHeading";
-import { ExternalLink, Github } from "lucide";
+import { ExternalLink, Github } from "lucide-react";
 
 // const projects = [
 //   {
@@ -113,10 +113,10 @@ const projects = [
       </>
     ),
     features: [
-      "Separate Go-based microservice for tracking article views.",
-      "Optimized NoSQL schema for complex user feeds.",
-      "Secure JWT authentication and real-time state management.",
-      "Interactive dashboard for content performance metrics.",
+      "Built a distraction-free rich-text editor using React 19, Tailwind 4, and TipTap.",
+      "Architected a nested MongoDB comment schema achieving $O(1)$ cascade deletions.",
+      "Optimized media storage via presigned Cloudflare R2 uploads and cron cleanups.",
+      "Secured API endpoints using Better Auth and IP-based rate limiting.",
     ],
     tech: ["MongoDB", "Express", "React", "Node.js"],
     links: [
@@ -254,19 +254,44 @@ const Projects = () => {
                         </div>
 
                         <div className="flex items-center gap-2 py-2">
-                          {/*<Github className/>*/}
-                          {/*<Github />*/}
-                          <img
-                            src="https://cdn.simpleicons.org/github"
-                            className="h-4 w-4"
-                          />
-                          <p className="text-sm font-ibm_sans text-muted-foreground underline cursor-pointer">
-                            <a
-                              href={project.links.find((t) => t.label === "Code")?.href}
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                            >Code</a>
-                          </p>
+                          <div className="flex items-center gap-2">
+                            {/*<Github className/>*/}
+                            {/*<Github />*/}
+                            <img
+                              src="https://cdn.simpleicons.org/github"
+                              className="h-4 w-4"
+                            />
+                            <p className="text-sm font-ibm_sans text-muted-foreground underline cursor-pointer">
+                              <a
+                                href={
+                                  project.links.find((t) => t.label === "Code")
+                                    ?.href
+                                }
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                Code
+                              </a>
+                            </p>
+                          </div>
+                          
+                          {project.links.find((t) => t.label === "Link") && (
+                            <div className="flex items-center gap-2">
+                              <ExternalLink className="h-4 w-4 text-muted-foreground" />
+                              <p className="text-sm font-ibm_sans text-muted-foreground underline cursor-pointer">
+                                <a
+                                  href={
+                                    project.links.find((t) => t.label === "Link")
+                                      ?.href
+                                  }
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  Link
+                                </a>
+                              </p>
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>
