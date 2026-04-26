@@ -120,7 +120,7 @@ const projects = [
     ],
     tech: ["MongoDB", "Express", "React", "Node.js"],
     links: [
-      { icon: ExternalLink, label: "Demo", href: "#" },
+      { icon: ExternalLink, label: "Link", href: "#" },
       {
         icon: Github,
         label: "Code",
