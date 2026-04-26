@@ -81,7 +81,7 @@ const Hero = () => (
           },
           {
             icon: File,
-            href: "https://drive.google.com/file/d/1YYnXhLQ91-JLsbVbBSQchEXcZPrHj4S9/view?usp=sharing",
+            href: "https://drive.google.com/file/d/1NRSiO7iKmwgQnPNek2mV0rTMRJKe27_S/view?usp=sharing",
             label: "Resume",
           },
         ].map(({ icon: Icon, href, label }) => (
