@@ -11,7 +11,7 @@ const Hero = () => (
           alt="Profile Pic"
           width={120}
           height={120}
-          className="rounded-xl"
+          className="rounded-xl -rotate-5 translate-y-2 translate-x-5"
         />
       </FadeIn>
       <FadeIn delay={0.1} className="flex flex-col text-left">
