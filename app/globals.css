@@ -184,7 +184,7 @@
 
 /* The old view stays in the background */
 ::view-transition-old(root) {
-    z-index: 1;
+  z-index: 1;
 }
 
 /* The new view (whether light or dark) always sits on top and gets clipped */
