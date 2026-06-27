@@ -6,7 +6,7 @@ export type ContributionDay = {
 
 export type GithubContributions = {
   total: { lastYear: number };
-  contributions: ContributionDay;
+  contributions: ContributionDay[];
 }
 
 export const getGithubContributions = async (username: string): Promise<GithubContributions| null >=> {
