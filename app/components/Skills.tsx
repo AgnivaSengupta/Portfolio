@@ -39,7 +39,8 @@ const Skills = () => (
         {skills.map((skill) => (
           <div
             key={skill.slug}
-            className="flex items-center gap-2 font-mono text-xs px-3 py-1.5 rounded-md border border-dashed border-border text-foreground/90 hover:border-foreground/40 transition-colors group"
+            className="flex items-center gap-2 font-mono text-xs px-3 py-1.5 rounded-md border border-dashed border-border text-foreground/90 dark:text-zinc-950 hover:border-foreground/40 transition-colors group dark:bg-white/60"
+            
           >
             <img 
               src={`https://cdn.simpleicons.org/${skill.slug}`} 

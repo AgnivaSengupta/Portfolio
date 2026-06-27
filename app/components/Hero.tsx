@@ -7,11 +7,11 @@ const Hero = () => (
     <FadeIn className="flex gap-10 items-center">
       <FadeIn delay={0.05}>
         <Image
-          src="/dp-github.png"
+          src="/dp-sticker.png"
           alt="Profile Pic"
-          width={120}
-          height={120}
-          className="rounded-xl"
+          width={140}
+          height={140}
+          
         />
       </FadeIn>
       <FadeIn delay={0.1} className="flex flex-col text-left">
@@ -81,7 +81,7 @@ const Hero = () => (
           },
           {
             icon: File,
-            href: "https://drive.google.com/file/d/1YYnXhLQ91-JLsbVbBSQchEXcZPrHj4S9/view?usp=sharing",
+            href: "https://drive.google.com/file/d/1NRSiO7iKmwgQnPNek2mV0rTMRJKe27_S/view?usp=sharing",
             label: "Resume",
           },
         ].map(({ icon: Icon, href, label }) => (
