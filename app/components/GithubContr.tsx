@@ -55,6 +55,9 @@ function getYearRange(contributions: { date: string }[]) {
 
 const GithubContr = async () => {
   const data = await getGithubContributions("AgnivaSengupta");
+  if (!data) {
+    return null
+  }
   const weeks = await groupContributionsbyWeek(data.contributions);
   const total = data.total.lastYear;
   const monthLabels = getMonthLabels(weeks);
