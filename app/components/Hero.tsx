@@ -11,7 +11,6 @@ const Hero = () => (
           alt="Profile Pic"
           width={140}
           height={140}
-          
         />
       </FadeIn>
       <FadeIn delay={0.1} className="flex flex-col text-left">
@@ -81,7 +80,7 @@ const Hero = () => (
           },
           {
             icon: File,
-            href: "https://drive.google.com/file/d/1NRSiO7iKmwgQnPNek2mV0rTMRJKe27_S/view?usp=sharing",
+            href: "https://drive.google.com/file/d/1wUsKqS6eaO3_ETQb2XDGW3PkHMlfqTOx/view?usp=sharing",
             label: "Resume",
           },
         ].map(({ icon: Icon, href, label }) => (
